@@ -1,0 +1,19 @@
+INSTALAR EXPO NO TERMINAL:
+yarn global add expo-cli
+	OU
+npm install -g expo-cli
+=========================================
+CRIAR PROJETO:
+expo init my-project
+ESCOLHER BLANK E APERTAR ENTER
+PARA RODAR O PROJETO:
+expo start
+PARA CRIAR UM ESCOPO, CRIAR UM NOVO ARQUIVO E DIGITAR:
+rnc + ENTER
+=========================================
+SITE:
+https://snack.expo.dev/
+============================================
+STYLED COMPONENTS:
+yarn add styled-components
+===========================================
