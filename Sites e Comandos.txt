@@ -17,3 +17,11 @@ https://snack.expo.dev/
 STYLED COMPONENTS:
 yarn add styled-components
 ===========================================
+SITE ICONES:
+https://oblador.github.io/react-native-vector-icons/
+
+==============================================
+BIBLIOTECA DE ICONES:
+npm install --save react-native-vector-icons
+npx react-native link react-native-vector-icons
+

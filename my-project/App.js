@@ -1,70 +1,51 @@
-import React from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import React, { useState } from "react";
+import {
+  Image,
+} from "react-native";
+import {
+  Container,
+  Contador,
+  BotaoDown,
+  BotaoUp,
+  BotaoZerar,
+  ContadorContainer,
+  Title,
+  TextoBotoes,
+  Imagem1,
+} from "./styles";
 
-// import { Container } from './styles';
+const App = () => {
+  const [numero, setNumero] = useState(0);
+  const Aumentar = () => {
+    setNumero(numero + 1);
+  };
+  const Diminuir = () => {
+    setNumero(numero - 1);
+  };
+  const Zerar = () => {
+    setNumero(0);
+  };
 
-const Teste = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <View
-        style={{
-          width: 250,
-          height: 330,
-          backgroundColor: "grey",
-          borderRadius: 10,
-        }}
-      >
-        <Text
-          style={{
-            textAlign: "center",
-            fontSize: 30,
-            fontWeight: "bold",
-            padding: 20,
-          }}
-        >
-          Login
-        </Text>
-        <View style={{ marginTop: 30 }}>
-          <View
-            style={{
-              width: 230,
-              height: 50,
-              backgroundColor: "white",
-              alignSelf: "center",
-              borderRadius: 10,
-            }}
-          />
-          <View
-            style={{
-              width: 230,
-              height: 50,
-              backgroundColor: "white",
-              alignSelf: "center",
-              borderRadius: 10,
-              marginTop: 10,
-            }}
-          />
-        </View>
-        <Pressable style={styles.input} >
-          <Text style={{color: "white", fontWeight: "bold"}}>Entrar</Text>
-        </Pressable>
-      </View>
-    </View>
+    <Container>
+      <Contador>
+        <Title>CONTADOR</Title>
+        <Imagem1
+          source={require("./assets/imagem1.png")}
+        />
+        <BotaoZerar onPress={Zerar}>
+          <TextoBotoes>RESTART</TextoBotoes>
+        </BotaoZerar>
+        <BotaoUp onPress={Aumentar}>
+          <TextoBotoes>UP</TextoBotoes>
+        </BotaoUp>
+        <ContadorContainer>{numero}</ContadorContainer>
+        <BotaoDown onPress={Diminuir}>
+          <TextoBotoes>DOWN</TextoBotoes>
+        </BotaoDown>
+      </Contador>
+    </Container>
   );
 };
 
-const styles = StyleSheet.create({
-  input: {
-    width: 120,
-    height: 50,
-    backgroundColor: "black",
-    alignSelf: "center",
-    marginTop: 30,
-    borderRadius: 10,
-    justifyContent:"center", 
-    alignItems:"center",
-    elevation: 5 // pesquisar
-  },
-});
-
-export default Teste;
+export default App;
