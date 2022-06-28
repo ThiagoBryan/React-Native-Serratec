@@ -18,9 +18,10 @@ export const Title = styled.Text`
   border-radius: 10px;
   font-weight: bold;
   font-size: 19px;
+  /* font-family: 'Courier New', Courier, monospace; */
 `;
 
-export const Imagem1 = styled.Image`
+export const Imagens = styled.Image`
   width: 150;
   height: 100;
   border-radius: 25px;
@@ -41,9 +42,9 @@ export const BotaoZerar = styled.TouchableOpacity`
   text-align: center;
   margin-top: 8;
   
-  &:hover {
+  /* &&:hover {
     background-color: red;
-  }
+  } */
   `;
 
 export const BotaoUp = styled.TouchableOpacity`
@@ -59,7 +60,7 @@ export const BotaoUp = styled.TouchableOpacity`
   text-align: center;
   `;
 
-export const Contador1 = styled.View`
+export const Tela = styled.View`
   width: 250;
   height: 400;
   background-color: #3cb371;
@@ -89,5 +90,6 @@ export const ContadorContainer = styled.Text`
   text-align: center;
   font-weight: bold;
   font-size: 30px;
+  
 `;
 

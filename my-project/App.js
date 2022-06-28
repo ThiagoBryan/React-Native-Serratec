@@ -10,8 +10,8 @@ const App = () => {
     <>
       {/* <Quadrados /> */}
       {/* <Home /> */}
-      {/* <Contador /> */}
-      <Favorito />
+      <Contador />
+      {/* <Favorito /> */}
     </>
   );
 };

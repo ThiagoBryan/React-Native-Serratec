@@ -25,4 +25,12 @@ https://icons.expo.fyi/
 BIBLIOTECA DE ICONES:
 npm install --save react-native-vector-icons
 npx react-native link react-native-vector-icons
+===============================================
+APK:
+expo --version
+expo login
+expo whoami
+expo build:android
+seleciona apk
+=====================================
 
