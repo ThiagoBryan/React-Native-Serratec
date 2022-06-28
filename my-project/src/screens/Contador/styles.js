@@ -59,7 +59,7 @@ export const BotaoUp = styled.TouchableOpacity`
   text-align: center;
   `;
 
-export const Contador = styled.View`
+export const Contador1 = styled.View`
   width: 250;
   height: 400;
   background-color: #3cb371;
@@ -78,9 +78,8 @@ export const BotaoDown = styled.TouchableOpacity`
   text-align: center;
 `;
 
-export const TextoBotoes = styled.Text`
+export const Icones = styled.Text`
   font-weight: bold;
-  //font-family: 'Times New Roman', Times, serif;
   font-style: italic;
 `;
 
@@ -91,3 +90,4 @@ export const ContadorContainer = styled.Text`
   font-weight: bold;
   font-size: 30px;
 `;
+

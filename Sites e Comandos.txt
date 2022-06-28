@@ -19,6 +19,7 @@ yarn add styled-components
 ===========================================
 SITE ICONES:
 https://oblador.github.io/react-native-vector-icons/
+https://icons.expo.fyi/
 
 ==============================================
 BIBLIOTECA DE ICONES:

@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 
-export default function App() {
+export const Quadrados = () =>  {
   return (
     <View style={styles.container}>
       <View
@@ -59,3 +59,4 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
 });
+

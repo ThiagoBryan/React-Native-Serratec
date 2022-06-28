@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { Container, Login, Title, Senha, BotaoLogin, Nome } from "../../../src/screens/Login/styles";
+import { Container, Login, Title, Senha, BotaoLogin, Nome } from "./styles";
 
-const Teste = () => {
+export const Home = () => {
   return (
     <Container>
       <Login>
@@ -19,4 +19,4 @@ const Teste = () => {
   );
 };
 
-export default Teste;
+
