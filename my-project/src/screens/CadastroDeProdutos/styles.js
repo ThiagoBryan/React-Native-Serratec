@@ -1,27 +1,20 @@
 import styled from "styled-components/native";
-import colors from "../../theme/colors";
+import colors from "../Theme/colors";
 
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
-  align-items: center;
-`;
-
-export const Tela = styled.View`
-  width: 250;
-  height: 420;
-  border-radius: 10;
-  border: 5px solid;
+  justify-content: flex-start;
 `;
 
 export const Header = styled.View`
-  width: 50;
-  height: 50;
+  height: 100;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 10;
-  margin-bottom: 30;
-  margin-left: 110px;
+`;
+
+export const Body = styled.View`
+  margin-top: 50;
 `;
 
 export const LogOut = styled.TouchableOpacity`
@@ -40,7 +33,6 @@ export const Imagem = styled.Image`
   height: 30;
   border-radius: 50px;
   margin-left: 50px;
-  
 `;
 
 export const InputTexto = styled.TextInput`
@@ -51,22 +43,24 @@ export const InputTexto = styled.TextInput`
   font-size: 15;
   padding: 10px;
 `;
+
 export const InputNome = styled.View`
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   background-color: ${colors.tertiary};
   border-radius: 10px;
   border: 1px solid;
   border-color: ${colors.primary};
   height: 35;
   align-self: center;
-  box-shadow: 0px 5px 5px #2F4F4F;
+  box-shadow: 0px 5px 5px #2f4f4f;
+  margin-top: 20;
 `;
 
 export const InputPreco = styled.View`
   width: 100%;
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   background-color: ${colors.tertiary};
   border-radius: 10px;
   border: 1px solid;
@@ -74,13 +68,13 @@ export const InputPreco = styled.View`
   height: 35;
   align-self: center;
   margin-top: 15;
-  box-shadow: 0px 5px 5px #2F4F4F;
+  box-shadow: 0px 5px 5px #2f4f4f;
 `;
 
 export const InputEstoque = styled.View`
   width: 100%;
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   background-color: ${colors.tertiary};
   border-radius: 10px;
   border: 1px solid;
@@ -88,28 +82,29 @@ export const InputEstoque = styled.View`
   height: 35;
   align-self: center;
   margin-top: 15;
-  box-shadow: 0px 5px 5px #2F4F4F;
+  box-shadow: 0px 5px 5px #2f4f4f;
 `;
 
 export const InputImagem = styled.View`
   width: 100%;
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   background-color: ${colors.tertiary};
   border-radius: 10px;
+  border: 1px solid;
+  border-color: ${colors.primary};
   height: 35;
   align-self: center;
   margin-top: 15;
-  margin-bottom: 5;
-  box-shadow: 0px 5px 5px #2F4F4F;
+  box-shadow: 0px 5px 5px #2f4f4f;
 `;
 
-export const TextoSelecionarImagem = styled.TouchableOpacity`
-font-size: 10;
-flex-direction: row;
-justify-content: center;
-color: ${colors.secondary};
-margin-bottom: 10;
+export const TextoSelecionarImagem = styled.Text`
+  font-size: 10;
+  align-self: center;
+  color: ${colors.secondary};
+  margin-bottom: 10;
+  margin-top: 8;
 `;
 
 export const BotaoCadastrar = styled.TouchableOpacity`
@@ -117,24 +112,24 @@ export const BotaoCadastrar = styled.TouchableOpacity`
   height: 30;
   background-color: ${colors.tertiary};
   align-self: center;
-  margin: 10px;
-  margin-bottom: 38px;
+  margin-top: 25;
   border-radius: 10px;
   border: 1px solid;
-  border-color: ${colors.primary};
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 5px #2F4F4F;
+  border-color: ${colors.primary};
+  box-shadow: 0px 5px 5px #2f4f4f;
 `;
 
 export const TextoBotaoCadastrar = styled.Text`
-  color: blue;
+  color: #05148c;
   font-weight: bold;
 `;
 
 export const Icones = styled.Pressable`
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 8;
-  padding-right: 12px;
+  margin-top: 190;
+  height: 35;
+  background-color: #00ffff;
 `;
