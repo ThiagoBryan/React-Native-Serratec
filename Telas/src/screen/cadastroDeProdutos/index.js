@@ -1,4 +1,4 @@
-import { Text, Pressable } from "react-native";
+import { Text } from "react-native";
 import {
   AntDesign,
   SimpleLineIcons,
@@ -24,22 +24,11 @@ import {
   TextoSelecionarImagem,
 } from "./styles.js";
 import { LinearGradient } from "expo-linear-gradient";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { TouchableOpacity } from "react-native-web";
 
 const CadastroProdutos = () => {
   const [olho, setOlho] = useState(false);
-
-  // const handleOlho = () => {
-  //   if (olho === true) {
-  //     setOlho(true);
-  //   }else {
-  //     setOlho(false)
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   handleOlho();
-  // });
 
   return (
     <Container>
@@ -72,15 +61,13 @@ const CadastroProdutos = () => {
         </InputEstoque>
         <InputImagem>
           <InputTexto placeholder="Imagem" />
-          {/* { !setOlho ? ( */}
-          <Pressable onPress={() => setOlho(olho) ? ( 
-            <Entypo name="eye" size={20} color="black" />
-          //{/* </Pressable> */}
-          ) : ( 
-          //{/* <Pressable onPress={handleOlho}> */}
-            <Entypo name="eye-with-line" size={20} color="black" />
-          //{/* </Pressable> */}
-          )}/>
+          <TouchableOpacity onPress={() => setOlho(!olho)}>
+            {olho ? (
+              <Entypo name="eye" size={20} color="black" />
+            ) : (
+              <Entypo name="eye-with-line" size={20} color="gray" />
+            )}
+          </TouchableOpacity>
         </InputImagem>
         <TextoSelecionarImagem>
           Selecionar Imagem
@@ -97,13 +84,9 @@ const CadastroProdutos = () => {
           <Text />
           <Feather name="star" size={20} color="black" />
           <Text />
-          <MaterialCommunityIcons
-            name="cart-outline"
-            size={20}
-            color="black"
-          />
+          <MaterialCommunityIcons name="cart-outline" size={20} color="black" />
         </Icones>
-        <LinearGradient
+        {/* <LinearGradient
           colors={["transparent", "#00ffff"]}
           style={{
             position: "absolute",
@@ -112,7 +95,7 @@ const CadastroProdutos = () => {
             bottom: 0,
             height: "30%",
           }}
-        />
+        /> */}
       </Tela>
     </Container>
   );

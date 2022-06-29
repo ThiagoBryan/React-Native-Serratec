@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
+import { TouchableOpacity } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
@@ -28,18 +29,29 @@ export const Nome = styled.TextInput`
   background-color: white;
   align-self: center;
   border-radius: 10;
-  font-size: 18;
   padding-left: 25px;
 `;
 
-export const Senha = styled.TextInput`
+// export const Senha = styled.TextInput`
+//   width: 230;
+//   height: 50;
+//   background-color: white;
+//   flex-direction: row;
+//   border-radius: 10;
+//   margin-top: 10;
+//   font-size: 18;
+//   padding-left: 25px;
+// `;
+
+export const Olho = styled.TouchableOpacity`
   width: 230;
   height: 50;
   background-color: white;
-  align-self: center;
+  flex-direction: row;
+  align-items: center;
   border-radius: 10;
   margin-top: 10;
-  font-size: 18;
+  margin-left: 10;
   padding-left: 25px;
 `;
 
@@ -55,6 +67,6 @@ export const BotaoLogin = styled.Pressable`
 `;
 
 // export const TextoEntrar = styled.Text`
-//     color: "white"; 
+//     color: "white";
 //     font-weight: "bold";
 // `;
