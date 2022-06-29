@@ -31,6 +31,14 @@ export const Imagem = styled.Image`
   margin-left: 50px;
 `;
 
+export const Cards = styled.View`
+  margin: 25px;
+  width: 80%;
+  height: 70;
+  background-color: blue;
+  align-items: center;
+`;
+
 export const Icones = styled.Pressable`
   flex-direction: row;
   justify-content: space-evenly;

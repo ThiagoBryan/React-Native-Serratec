@@ -1,6 +1,15 @@
 import React from "react";
-import { FlatList, View, Text } from "react-native";
-import { Container, Header, LogOut, Title, Imagem, Icones } from "./styles.js";
+import { FlatList, Text } from "react-native";
+import {
+  Container,
+  Header,
+  LogOut,
+  Title,
+  Imagem,
+  Icones,
+  Cards,
+  Card1,
+} from "./styles.js";
 import {
   AntDesign,
   SimpleLineIcons,
@@ -32,11 +41,11 @@ const Lista = [
 ];
 
 const Item = ({ produto, preco, estoque }) => (
-  <View>
+  <Cards>
     <Text>{produto}</Text>
     <Text>{preco}</Text>
     <Text>{estoque}</Text>
-  </View>
+  </Cards>
 );
 
 const Favoritos = () => {
