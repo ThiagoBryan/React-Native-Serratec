@@ -10,9 +10,8 @@ export const Container = styled.View`
 export const Tela = styled.View`
   width: 250;
   height: 420;
-  /* background-color: ${colors.primary}; */
-  background-color:	#4169E1;
   border-radius: 10;
+  border: 5px solid;
 `;
 
 export const Header = styled.View`
@@ -25,7 +24,7 @@ export const Header = styled.View`
   margin-left: 110px;
 `;
 
-export const LogOut = styled.Text`
+export const LogOut = styled.TouchableOpacity`
   padding-right: 35px;
 `;
 
@@ -105,11 +104,12 @@ export const InputImagem = styled.View`
   box-shadow: 0px 5px 5px #2F4F4F;
 `;
 
-export const TextoSelecionarImagem = styled.Text`
+export const TextoSelecionarImagem = styled.TouchableOpacity`
 font-size: 10;
-text-align: center;
+flex-direction: row;
+justify-content: center;
 color: ${colors.secondary};
-margin-bottom: 15;
+margin-bottom: 10;
 `;
 
 export const BotaoCadastrar = styled.TouchableOpacity`
@@ -132,7 +132,7 @@ export const TextoBotaoCadastrar = styled.Text`
   font-weight: bold;
 `;
 
-export const Icones = styled.View`
+export const Icones = styled.Pressable`
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 8;

@@ -9,8 +9,8 @@ const App = () => {
   return (
     <>
       {/* <Quadrados /> */}
-      {/* <Home /> */}
-      <Contador />
+      <Home />
+      {/* <Contador /> */}
       {/* <Favorito /> */}
     </>
   );

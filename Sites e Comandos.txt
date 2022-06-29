@@ -33,4 +33,20 @@ expo whoami
 expo build:android
 seleciona apk
 =====================================
+NAVIGATION:
+npm install @react-navigation/native @react-navigation/native-stack
+OU
+yarn add @react-navigation/native-stack
+yarn add @react-navigation/native
+yarn add @react-navigation/stack
+==========================================================
+SAFE AREA:
+expo install react-native-screens react-native-safe-area-context
+OU
+yarn add react-native-screens react-native-safe-area-context
+==================================================================
+BIBLIOTECA LINEAR GRADIENTE:
+expo install expo-linear-gradient
+=======================================
+yarn add @react-navigation/native
 

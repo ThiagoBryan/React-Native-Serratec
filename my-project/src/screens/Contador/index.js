@@ -32,7 +32,7 @@ export const Contador = () => {
     } else if (numero === 4 || numero === -4) {
       setImagem(require(`../../../assets/aguegabu.png`));
     } else if (numero === 2 || numero === -6) {
-        setImagem(require(`../../../assets/olhosazuis.jpg`));
+      setImagem(require(`../../../assets/olhosazuis.jpg`));
     } else {
       setImagem(require(`../../../assets/chamander1.png`));
     }
