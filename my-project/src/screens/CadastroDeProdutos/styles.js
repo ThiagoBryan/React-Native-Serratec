@@ -13,19 +13,20 @@ export const Header = styled.View`
   justify-content: space-evenly;
 `;
 
-export const Body = styled.View`
-  margin-top: 50;
-`;
 
 export const LogOut = styled.TouchableOpacity`
   padding-right: 35px;
-`;
+  `;
 
 export const Title = styled.Text`
   font-size: 15;
   font-weight: bold;
   color: ${colors.secondary};
   text-align: center;
+  `;
+
+export const Body = styled.View`
+  margin-top: 50;
 `;
 
 export const Imagem = styled.Image`

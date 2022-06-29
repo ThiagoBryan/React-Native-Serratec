@@ -30,7 +30,7 @@ const Item = ({ produto, preco, estoque }) => (
   </View>
 );
 
-const Favorito = () => {
+const Teste = () => {
   const itemRenderizado = ({ item }) => (
     <Item produto={item.produto} preco={item.preco} estoque={item.estoque} />
   );
@@ -43,4 +43,4 @@ const Favorito = () => {
     />
   );
 };
-export default Favorito;
+export default Teste;

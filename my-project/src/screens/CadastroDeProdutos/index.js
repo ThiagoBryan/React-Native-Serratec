@@ -21,7 +21,6 @@ import {
   Imagem,
   TextoSelecionarImagem,
 } from "./styles.js";
-// import { LinearGradient } from "expo-linear-gradient";
 import GradienteTopo from './../../components/GradientTopo/index';
 import GradienteRodape from './../../components/GradienteRodape/index';
 
