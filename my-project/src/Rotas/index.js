@@ -14,6 +14,13 @@ const Rotas = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
+        name="Favoritos"
+        component={Favoritos}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
       name="CadastroProdutos"
       component={CadastroProdutos}
       options={{
@@ -23,13 +30,6 @@ const Rotas = () => {
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen
-        name="Favoritos"
-        component={Favoritos}
         options={{
           headerShown: false,
         }}
