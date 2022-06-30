@@ -3,8 +3,6 @@ import {
   Container,
   Title,
   Header,
-  Body,
-  LogOut,
   InputNome,
   InputTexto,
   InputPreco,
@@ -15,10 +13,12 @@ import {
   Icones,
   Imagem,
   TextoSelecionarImagem,
+  IconeTexto,
 } from "./styles.js";
 import GradienteTopo from "./../../components/GradientTopo/index";
 import GradienteRodape from "./../../components/GradienteRodape/index";
 import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
 const CadastroProdutos = () => {
   const navigation = useNavigation();
@@ -39,34 +39,34 @@ const CadastroProdutos = () => {
     <Container>
       <GradienteTopo />
       <Header>
-        <LogOut>
+        <TouchableOpacity>
           <AntDesign
             name="logout"
-            size={12}
+            size={20}
             color="black"
             onPress={openScreenHome}
           />
-        </LogOut>
-        <Title>Cadastro de Produto</Title>
+        </TouchableOpacity>
+        <Title>Cadastro de Produto </Title>
         <Imagem source={require("../../../assets/SplashScreen.png")} />
       </Header>
-      <Body>
-        <InputNome>
-          <InputTexto placeholder="Nome" />
-        </InputNome>
-        <InputPreco>
-          <InputTexto placeholder="Preço R$" />
-        </InputPreco>
-        <InputEstoque>
-          <InputTexto placeholder="Quantidade em Estoque" />
-        </InputEstoque>
-        <InputImagem>
-          <InputTexto placeholder="Imagem" />
-        </InputImagem>
-      </Body>
+      <InputNome>
+        <InputTexto placeholder="Nome" />
+      </InputNome>
+      <InputPreco>
+        <InputTexto placeholder="Preço R$" />
+      </InputPreco>
+      <InputEstoque>
+        <InputTexto placeholder="Quantidade em Estoque" />
+      </InputEstoque>
+      <InputImagem>
+        <InputTexto placeholder="Imagem" />
+      </InputImagem>
       <TextoSelecionarImagem>
         Selecionar Imagem
-        <AntDesign name="upload" size={10} color="#141568" />
+        <IconeTexto>
+        <AntDesign name="upload" size={13} color="#141568" />
+        </IconeTexto> 
       </TextoSelecionarImagem>
       <BotaoCadastrar>
         <TextoBotaoCadastrar>Cadastrar</TextoBotaoCadastrar>

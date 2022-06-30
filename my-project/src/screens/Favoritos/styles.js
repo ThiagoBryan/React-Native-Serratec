@@ -11,6 +11,7 @@ export const Header = styled.View`
   height: 100;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 20px;
 `;
 
 export const LogOut = styled.TouchableOpacity`
