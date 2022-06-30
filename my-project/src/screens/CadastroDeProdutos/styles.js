@@ -130,7 +130,8 @@ export const TextoBotaoCadastrar = styled.Text`
 export const Icones = styled.Pressable`
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 190;
-  height: 35;
+  margin-top: 203;
+  padding-top: 5px;
+  height: 30;
   background-color: #00ffff;
 `;

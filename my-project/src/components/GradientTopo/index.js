@@ -10,6 +10,7 @@ const GradienteTopo = () => {
         right: 0,
         top: 0,
         height: "30%",
+        zIndex: -1,
       }}
     />
   );

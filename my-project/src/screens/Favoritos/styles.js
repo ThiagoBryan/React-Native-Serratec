@@ -35,14 +35,28 @@ export const Cards = styled.View`
   margin: 25px;
   width: 80%;
   height: 70;
-  background-color: blue;
+  background-color: white;
   align-items: center;
+  border: 1px solid;
+  border-color: #00ffff;
+  box-shadow: 0px 5px 5px #2f4f4f;
+`;
+
+export const ImagemCard = styled.Image`
+  width: 120;
+  height: 60;
+  border-radius: 5px;
+  
+`;
+
+export const TextCards = styled.Text`
+  color: ${colors.secondary};
 `;
 
 export const Icones = styled.Pressable`
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 190;
-  height: 35;
+  margin-top: 200px;
+  height: 30;
   background-color: #00ffff;
 `;

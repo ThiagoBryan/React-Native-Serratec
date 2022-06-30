@@ -10,6 +10,7 @@ const GradienteRodape = () => {
         right: 0,
         bottom: 0,
         height: "30%",
+        zIndex: -1,
       }}
     />
   );
