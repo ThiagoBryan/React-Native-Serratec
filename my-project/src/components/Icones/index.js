@@ -19,20 +19,20 @@ const Icones = () => {
 
   return (
     <StyleIcones>
-      <AntDesign name="home" size={30} color="black" onPress={openScreenHome} />
+      <AntDesign name="home" size={30} color="grey" onPress={openScreenHome} />
       <Feather
         name="shopping-bag"
         size={30}
-        color="black"
+        color="grey"
         onPress={openScreenCadastroDeProdutos}
       />
       <Feather
         name="star"
         size={30}
-        color="black"
+        color="grey"
         onPress={openScreenFavoritos}
       />
-      <MaterialCommunityIcons name="cart-outline" size={30} color="black" />
+      <MaterialCommunityIcons name="cart-outline" size={30} color="grey" />
     </StyleIcones>
   );
 };

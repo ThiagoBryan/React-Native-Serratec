@@ -11,11 +11,10 @@ import {
   TextoSelecionarImagem,
   IconeTexto,
 } from "./styles.js";
-import GradienteTopo from "./../../components/GradientTopo/index";
-import GradienteRodape from "./../../components/GradienteRodape/index";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
 import Icones from "./../../components/Icones/index";
+import Gradiente from './../../components/Gradiente/index';
 
 const CadastroProdutos = () => {
   const navigation = useNavigation();
@@ -26,7 +25,7 @@ const CadastroProdutos = () => {
 
   return (
     <Container>
-      <GradienteTopo />
+      <Gradiente posicao="top"/>
       <Header>
         <TouchableOpacity>
           <AntDesign
@@ -55,7 +54,7 @@ const CadastroProdutos = () => {
         </BotaoCadastrar>
       </Body>
       <Icones />
-      <GradienteRodape />
+      <Gradiente posicao="bottom"/>
     </Container>
   );
 };
