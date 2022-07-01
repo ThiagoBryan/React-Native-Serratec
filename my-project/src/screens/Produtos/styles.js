@@ -47,7 +47,7 @@ export const Cards = styled.View`
   border-color: #00ffff;
   border-radius: 5px;
   box-shadow: 0px 5px 5px #2f4f4f;
-`;
+  `;
 
 export const Descricao = styled.View`
   border: 0px;
