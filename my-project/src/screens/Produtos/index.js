@@ -7,7 +7,6 @@ import {
   Container,
   Header,
   Title,
-  Body,
   Imagem,
   Cards,
   ImagemCard,
@@ -134,15 +133,14 @@ const Produtos = () => {
           />
         </TouchableOpacity>
         <Title>Produtos</Title>
-        <Imagem source={require("../../../assets/SplashScreen.png")} />
+        <Imagem source={require("../../../assets/logo.png")} />
       </Header>
-      {/* <Body> */}
-        <FlatList
-          data={Lista}
-          renderItem={itemRenderizado}
-          keyExtractor={(item) => item.id}
-        />
-      {/* </Body> */}
+      <FlatList
+        data={Lista}
+        renderItem={itemRenderizado}
+        keyExtractor={(item) => item.id}
+        numColumns={2}
+      />
       <Icones />
       <Gradiente posicao="bottom" />
     </Container>
