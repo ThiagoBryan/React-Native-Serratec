@@ -48,5 +48,10 @@ yarn add react-native-screens react-native-safe-area-context
 BIBLIOTECA LINEAR GRADIENTE:
 expo install expo-linear-gradient
 =======================================
+TAB BAR:
+yarn add @react-navigation/bottom-tabs
+OU
+npm install @react-navigation/bottom-tabs
+==========================================
 
 

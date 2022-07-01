@@ -6,6 +6,7 @@ import Favoritos from './../screens/Favoritos/index';
 import Teste from './../screens/Teste/index';
 import Home from './../screens/Home/index';
 import CadastroProdutos from "../screens/CadastroDeProdutos";
+import Produtos from './../screens/Produtos/index';
 
 
 const Stack = createNativeStackNavigator();
@@ -13,6 +14,13 @@ const Stack = createNativeStackNavigator();
 const Rotas = () => {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="Produtos"
+        component={Produtos}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="Favoritos"
         component={Favoritos}
