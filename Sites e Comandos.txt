@@ -8,6 +8,7 @@ expo init my-project
 ESCOLHER BLANK E APERTAR ENTER
 PARA RODAR O PROJETO:
 expo start
+=============================================
 PARA CRIAR UM ESCOPO, CRIAR UM NOVO ARQUIVO E DIGITAR:
 rnc + ENTER
 =========================================
