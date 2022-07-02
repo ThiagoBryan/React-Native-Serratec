@@ -15,7 +15,7 @@ const ConsultarProdutos = () => {
         <TouchableOpacity>
         <Ionicons name="arrow-back-circle-outline" size={20} color="black" />
         </TouchableOpacity>
-        <Title>Consultar Produto </Title>
+        <Title>Consultar Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />
       </Header>
       </Container>
