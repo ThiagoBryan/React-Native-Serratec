@@ -1,11 +1,24 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Ionicons } from '@expo/vector-icons';
+import { TouchableOpacity } from "react-native";
+import {
+  Container,
+  Header,
+  Title,
+  Imagem,
+} from "./styles";
 
 const ConsultarProdutos = () => {
   return (
-    <View>
-      <Text>ConsultarProdutos</Text>
-    </View>
+    <Container>
+      <Header>
+        <TouchableOpacity>
+        <Ionicons name="arrow-back-circle-outline" size={20} color="black" />
+        </TouchableOpacity>
+        <Title>Consultar Produto </Title>
+        <Imagem source={require("../../../assets/Logo.jpg")} />
+      </Header>
+      </Container>
   );
 };
 

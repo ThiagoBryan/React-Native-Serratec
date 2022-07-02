@@ -1,8 +1,8 @@
-import styled from "styled-components/native";
+
 import colors from "../Theme/colors";
 
 export const Container = styled.View`
-  flex: 1;
+  fleimport styled from "styled-components/native";x: 1;
   justify-content: space-between;
 `;
 
