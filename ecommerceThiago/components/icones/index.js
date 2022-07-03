@@ -32,7 +32,7 @@ export default function TabBar() {
         tabBarActiveTintColor: "black",
         tabBarInactiveTintColor: "gray",
         tabBarActiveBackgroundColor: "#FEBC38",
-        tabBarInactiveBackgroundColor: "#44443F",
+        tabBarInactiveBackgroundColor: "black",
       })}
     >
        <Tab.Screen

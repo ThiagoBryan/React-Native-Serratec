@@ -4,6 +4,7 @@ import colors from "../Theme/colors";
 export const Container = styled.View`
   flex: 1;
   justify-content: space-between;
+  background-color: ${colors.primary};
 `;
 
 export const Header = styled.View`
@@ -17,7 +18,7 @@ export const Header = styled.View`
 export const Title = styled.Text`
   font-size: 23px;
   font-weight: bold;
-  color: ${colors.secondary};
+  color: ${colors.tertiary};
   text-align: center;
   margin-left: 25px;
 `;
@@ -49,7 +50,7 @@ export const StyleBotoes = styled.TouchableOpacity`
   margin: 10px;
   border: 2px solid;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: ${colors.secondary};
 `;
 
 export const TextBotoes = styled.Text`

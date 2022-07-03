@@ -11,7 +11,6 @@ import {
   StyleBotoes,
   TextBotoes,
 } from "./styles";
-import Gradiente from "./../../../components/Gradiente/index";
 import { useNavigation } from "@react-navigation/native";
 
 const Produtos = () => {
@@ -34,10 +33,9 @@ const Produtos = () => {
 
   return (
     <Container>
-       <Gradiente posicao="top" />
       <Header>
         <TouchableOpacity>
-          <Ionicons name="arrow-back-circle-outline" size={24} color="black" />
+          <Ionicons name="arrow-back-circle-outline" size={30} color="black" />
         </TouchableOpacity>
         <Title>Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />
@@ -57,7 +55,6 @@ const Produtos = () => {
           <TextBotoes>Excluir Produto</TextBotoes>
         </StyleBotoes>
       </Botoes>
-      <Gradiente posicao="Bottom" />
     </Container>
   );
 };

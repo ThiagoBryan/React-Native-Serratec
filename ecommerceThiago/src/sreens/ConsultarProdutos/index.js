@@ -11,15 +11,14 @@ import {
   TextoInformacoes,
   Icones,
 } from "./styles";
-import Gradiente from "../../../components/Gradiente";
+
 
 const ConsultarProdutos = () => {
   return (
     <Container>
-      <Gradiente posicao="top" />
       <Header>
         <TouchableOpacity>
-          <Ionicons name="arrow-back-circle-outline" size={20} color="black" />
+          <Ionicons name="arrow-back-circle-outline" size={30} color="black" />
         </TouchableOpacity>
         <Title>Consultar Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />
@@ -56,7 +55,6 @@ const ConsultarProdutos = () => {
           <Text>Excluir</Text>
         </TouchableOpacity>
       </Icones>
-      <Gradiente posicao="Bottom" />
     </Container>
   );
 };

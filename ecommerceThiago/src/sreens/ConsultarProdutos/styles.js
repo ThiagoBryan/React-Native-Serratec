@@ -4,7 +4,7 @@ import colors from "../Theme/colors";
 export const Container = styled.View`
   flex: 1;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: ${colors.primary};
 `;
 
 export const Header = styled.View`
@@ -18,7 +18,7 @@ export const Header = styled.View`
 export const Title = styled.Text`
   font-size: 23px;
   font-weight: bold;
-  color: ${colors.secondary};
+  color: ${colors.tertiary};
   text-align: center;
   margin-left: 25px;
 `;
@@ -43,6 +43,7 @@ height: 200px;
 border: 3px solid;
 border-radius: 15px;
 align-self: center;
+background-color: ${colors.secondary};
 `;
 
 export const TextoInformacoes = styled.Text`
