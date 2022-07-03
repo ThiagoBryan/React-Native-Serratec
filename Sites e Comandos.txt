@@ -54,5 +54,8 @@ yarn add @react-navigation/bottom-tabs
 OU
 npm install @react-navigation/bottom-tabs
 ==========================================
+SITE DE CORES:
+https://htmlcolorcodes.com/
+============================================
 
 
