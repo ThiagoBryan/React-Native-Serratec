@@ -32,7 +32,7 @@ const ConsultarProdutos = () => {
         <Title>Consultar Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />
       </Header>
-      <Foto source={require("../../../assets/Logo.jpg")}  />
+      <Foto  />
       <Informaçoes>
         <TextoInformacoes>
           <Text>Id Produto:</Text>

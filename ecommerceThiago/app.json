@@ -7,7 +7,7 @@
     "icon": "./assets/Logo.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Logo.jpg",
+      "image": "./assets/pacman-gif.gif",
       "resizeMode": "cover",
       "backgroundColor": "#FEBC38"
     },
