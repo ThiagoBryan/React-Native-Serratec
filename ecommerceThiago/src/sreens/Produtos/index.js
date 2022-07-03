@@ -30,12 +30,15 @@ const Produtos = () => {
   function openScreenExcluirDeProdutos() {
     navigation.navigate("ExcluirProduto");
   }
+  function openScreenHome() {
+    navigation.navigate("Home");
+  }
 
   return (
     <Container>
       <Header>
         <TouchableOpacity>
-          <Ionicons name="arrow-back-circle-outline" size={30} color="black" />
+          <Ionicons name="arrow-back-circle-outline" size={30} color="black" onPress={openScreenHome} />
         </TouchableOpacity>
         <Title>Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />

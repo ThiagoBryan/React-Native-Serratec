@@ -11,14 +11,23 @@ import {
   TextoInformacoes,
   Icones,
 } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 
 const ConsultarProdutos = () => {
+
+  const navigation = useNavigation();
+
+  function openScreenHome() {
+    navigation.navigate("Home");
+  }
+
+
   return (
     <Container>
       <Header>
         <TouchableOpacity>
-          <Ionicons name="arrow-back-circle-outline" size={30} color="black" />
+          <Ionicons name="arrow-back-circle-outline" size={30} color="black" onPress={openScreenHome} />
         </TouchableOpacity>
         <Title>Consultar Produtos</Title>
         <Imagem source={require("../../../assets/Logo.jpg")} />
