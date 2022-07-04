@@ -12,7 +12,6 @@ import {
   TextBotoes,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
-import TabBar from "../../../components/TabBar";
 
 const Produtos = () => {
 
@@ -59,7 +58,6 @@ const Produtos = () => {
           <TextBotoes>Excluir Produto</TextBotoes>
         </StyleBotoes>
       </Botoes>
-      {/* <TabBar /> */}
     </Container>
   );
 };

@@ -12,20 +12,14 @@ import {
   TextBotoes,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
-import TabBar from "../../../components/TabBar";
 
 const Login = () => {
 
   const navigation = useNavigation();
-
-  function openScreenTabBar() {
-    navigation.navigate("TabBar");
-  }
-
   
-//   function openScreenHome() {
-//     navigation.navigate("Home");
-//   }
+  function openScreenHome() {
+    navigation.navigate("Home");
+  }
 
   return (
     <Container>
@@ -38,7 +32,7 @@ const Login = () => {
       </Header>
       <ImagemLogo source={require("../../../assets/Logo.jpg")} /> */}
       <Botoes>
-        <StyleBotoes onPress={openScreenTabBar}>
+        <StyleBotoes onPress={openScreenHome}>
           <TextBotoes>Entrar</TextBotoes>
         </StyleBotoes>
         
