@@ -12,6 +12,8 @@ import {
   Icones,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
+import TabBar from "../../../components/TabBar";
+
 
 
 const ConsultarProdutos = () => {
@@ -64,6 +66,7 @@ const ConsultarProdutos = () => {
           <Text>Excluir</Text>
         </TouchableOpacity>
       </Icones>
+      {/* <TabBar /> */}
     </Container>
   );
 };

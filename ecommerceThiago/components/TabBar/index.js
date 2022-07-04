@@ -4,8 +4,7 @@ import Produtos from "../../src/sreens/Produtos";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Home from "../../src/sreens/Home";
 import Categoria from "../../src/sreens/Categoria";
-import Usuario from "./../../src/sreens/Usuario/index";
-import ConsultarProdutos from './../../src/sreens/ConsultarProdutos/index';
+import Usuario from "../../src/sreens/Usuario/index";
 
 const Tab = createBottomTabNavigator();
 
@@ -35,13 +34,6 @@ export default function TabBar() {
         tabBarInactiveBackgroundColor: "black",
       })}
     >
-       <Tab.Screen
-        name="ConsultarProdutos"
-        component={ConsultarProdutos}
-        options={{
-          headerShown: false,
-        }}
-      />
       <Tab.Screen
         name="Home"
         component={Home}
@@ -70,6 +62,13 @@ export default function TabBar() {
           headerShown: false,
         }}
       />
+      {/* <Tab.Screen
+        name="ConsultarProdutos"
+        component={ConsultarProdutos}
+        options={{
+          headerShown: false,
+        }}
+      /> */}
     </Tab.Navigator>
   );
 }
