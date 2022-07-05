@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Ionicons, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 import { Text, TouchableOpacity } from "react-native";
 import {
@@ -13,7 +13,7 @@ import {
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import TabBar from "../../../components/TabBar";
-
+import axios from "axios";
 
 const ConsultarProdutos = () => {
 
@@ -22,7 +22,18 @@ const ConsultarProdutos = () => {
   function openScreenHome() {
     navigation.navigate("Home");
   }
+  const [Produtos, setProdutos] = useState([]);
+  // https://reactnative.herokuapp.com/reactnative/categoria
+  const getProdutos = () => {
+    axios.get('https://secret-headland-69654.herokuapp.com/materias').then((response) => {
+      setProdutos(response.data);
+      console.log(response.data)
+    });
+  };
 
+  useEffect(() => {
+    getProdutos();
+  }, []);
 
   return (
     <Container>

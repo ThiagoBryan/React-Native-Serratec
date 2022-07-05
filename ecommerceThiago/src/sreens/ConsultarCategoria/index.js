@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Ball, Box, BoxAll, Container, Icones, IconesModificacao, Imagem, ImagemCateg, BallIcone, TextBox, Title, TitleIcon, Top } from './styles';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import TabBar from './../../../components/TabBar/index';
+import { TouchableOpacity } from 'react-native';
+import axios from "axios";
+import Categoria from './../Categoria/index';
 
 const ConsultarCategoria = () => {
 
@@ -13,6 +16,19 @@ const ConsultarCategoria = () => {
   const TelaAnterior = () => {
     navigation.navigate('Categoria') 
   }
+
+  const [categorias, setCategorias] = useState([]);
+  // https://reactnative.herokuapp.com/reactnative/categoria
+  const getCategorias = () => {
+    axios.get('https://secret-headland-69654.herokuapp.com/materias').then((response) => {
+      setCategorias(response.data);
+      console.log(response.data)
+    });
+  };
+
+  useEffect(() => {
+    getCategorias();
+  }, []);
 
   return (
     <Container>
@@ -40,9 +56,13 @@ const ConsultarCategoria = () => {
       </ImagemCateg>
 
       <BoxAll>
-        <Box>
-          <TextBox>API</TextBox>
-        </Box>        
+          <TextBox>
+          {/* {categorias.map((categoria) => (
+        {categorias.titulo}
+          ))} */}
+          </TextBox>
+
+               
       </BoxAll>
 
       <Icones>
