@@ -6,6 +6,7 @@ import Login from "../src/sreens/Login";
 import Home from "../src/sreens/Home";
 import Usuario from './../src/sreens/Usuario/index';
 import Categoria from './../src/sreens/Categoria/index';
+import ConsultarCategoria from './../src/sreens/ConsultarCategoria/index';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +51,13 @@ const Rotas = () => {
       <Stack.Screen
         name="ConsultarProdutos"
         component={ConsultarProdutos}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="ConsultarCategoria"
+        component={ConsultarCategoria}
         options={{
           headerShown: false,
         }}
