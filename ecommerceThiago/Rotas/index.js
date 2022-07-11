@@ -13,6 +13,13 @@ const Stack = createNativeStackNavigator();
 const Rotas = () => {
   return (
     <Stack.Navigator>
+       <Stack.Screen
+        name="ConsultarCategoria"
+        component={ConsultarCategoria}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="Login"
         component={Login}
@@ -55,13 +62,7 @@ const Rotas = () => {
           headerShown: false,
         }}
       />
-      <Stack.Screen
-        name="ConsultarCategoria"
-        component={ConsultarCategoria}
-        options={{
-          headerShown: false,
-        }}
-      />
+     
     </Stack.Navigator>
   );
 };
